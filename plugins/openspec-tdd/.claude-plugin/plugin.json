@@ -5,7 +5,7 @@
   "description": "Adds a solid-RED opsx:tdd gate to OpenSpec (between opsx:propose and opsx:apply). Converts a change's tests.md into REAL failing tests (real render, real data-testids, real assertions) that fail only because the implementation is missing. No expect.fail placeholders.",
   "author": {
     "name": "Yuri Toledo",
-    "email": "yuri.toledo@aceguardian.co"
+    "email": "yuriwtoledo@gmail.com"
   },
   "license": "MIT",
   "keywords": [

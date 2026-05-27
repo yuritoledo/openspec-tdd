@@ -4,7 +4,7 @@
   "description": "Adds a solid-RED opsx:tdd command to OpenSpec — a test-first gate that writes real failing tests instead of expect.fail placeholders.",
   "owner": {
     "name": "Yuri Toledo",
-    "email": "yuri.toledo@aceguardian.co"
+    "email": "yuriwtoledo@gmail.com"
   },
   "plugins": [
     {
