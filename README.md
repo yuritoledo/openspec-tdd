@@ -1,13 +1,15 @@
 # openspec-tdd
 
-A drop-in **TDD overlay for [OpenSpec](https://github.com/Fission-AI/OpenSpec)**.
+**Adds a TDD gate to [OpenSpec](https://github.com/Fission-AI/OpenSpec)** — a new `opsx:tdd`
+command that sits between `opsx:propose` and `opsx:apply`.
 
-It replaces the stock `opsx:tdd` red phase with one that writes **real failing tests** instead
-of `expect.fail("TDD Red Phase")` placeholders.
+OpenSpec generates BDD scenarios in `tests.md` but jumps straight to implementation — no
+test-first step exists. This plugin adds one. And it does it with **real failing tests**, not
+`expect.fail("TDD Red Phase")` placeholders.
 
-## Why
+## Why real red, not placeholder red
 
-The stock red phase writes placeholder tests:
+A naive TDD gate writes placeholder tests:
 
 ```ts
 it("renders the schedule trigger for a permitted user", () => {
@@ -35,12 +37,12 @@ rewrite**. It guards against regressions from the very first commit.
 
 ## What you get
 
-- A `opsx:tdd` skill that:
-  - reads the change's `tests.md`, `proposal.md`, `design.md`
-  - writes real render / invoke / `data-testid` / `userEvent` assertions
-  - runs the suite and confirms RED fails for the right reason (missing impl, not a typo)
-  - reports the new `data-testid` contract for the apply phase
-  - marks unreachable branches / unknowable values as honest `it.skip` gaps, never forced fails
+A new `opsx:tdd` skill that:
+- reads the change's `tests.md`, `proposal.md`, `design.md`
+- writes real render / invoke / `data-testid` / `userEvent` assertions
+- runs the suite and confirms RED fails for the right reason (missing impl, not a typo)
+- reports the new `data-testid` contract for the apply phase
+- marks unreachable branches / unknowable values as honest `it.skip` gaps, never forced fails
 
 ## Install
 
@@ -54,8 +56,8 @@ rewrite**. It guards against regressions from the very first commit.
 /plugin install openspec-tdd@openspec-tdd
 ```
 
-The skill is named `opsx:tdd`. Because it ships as a plugin skill, it **survives `openspec`
-CLI regeneration** of `.claude/skills/openspec-*/` — unlike a hand-edited local skill.
+The skill is named `opsx:tdd`. It ships as a plugin skill, so it lives independently of your
+project's `.claude/` and survives `openspec` CLI runs.
 
 ## Workflow
 

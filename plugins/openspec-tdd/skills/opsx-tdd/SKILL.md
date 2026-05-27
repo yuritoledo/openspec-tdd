@@ -1,6 +1,6 @@
 ---
 name: opsx:tdd
-description: Write REAL failing tests from a change's tests.md before implementation. Run after opsx:propose and before opsx:apply. Solid RED — never expect.fail placeholders.
+description: Adds a TDD gate to OpenSpec — write REAL failing tests from a change's tests.md before implementation. Run after opsx:propose and before opsx:apply. Solid RED — never expect.fail placeholders.
 license: MIT
 compatibility: Requires the openspec CLI and a JS/TS test runner (bun test, vitest, or jest).
 metadata:

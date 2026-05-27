@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "openspec-tdd",
-  "description": "OpenSpec TDD overlay — a solid-RED opsx:tdd command that writes real failing tests instead of expect.fail placeholders.",
+  "description": "Adds a solid-RED opsx:tdd command to OpenSpec — a test-first gate that writes real failing tests instead of expect.fail placeholders.",
   "owner": {
     "name": "Yuri Toledo",
     "email": "yuri.toledo@aceguardian.co"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "openspec-tdd",
-      "description": "Replaces opsx:tdd red-phase with REAL failing tests (real render/testids/assertions). Survives openspec CLI skill regeneration.",
+      "description": "Adds a test-first opsx:tdd gate between opsx:propose and opsx:apply that writes REAL failing tests (real render/testids/assertions).",
       "category": "testing",
       "source": "./plugins/openspec-tdd"
     }
