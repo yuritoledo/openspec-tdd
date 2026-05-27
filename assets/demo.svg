@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="500" viewBox="0 0 840 500" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15">
+  <defs>
+    <style>
+      .bg{fill:#0d1117}
+      .win{fill:#161b22;stroke:#30363d;stroke-width:1}
+      .t{fill:#c9d1d9}
+      .dim{fill:#8b949e}
+      .red{fill:#f85149}
+      .grn{fill:#3fb950}
+      .yel{fill:#d29922}
+      .cy{fill:#58a6ff}
+      .mag{fill:#bc8cff}
+      .b{font-weight:700}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="840" height="500" rx="10"/>
+  <rect class="win" x="16" y="16" width="808" height="468" rx="8"/>
+
+  <!-- title bar -->
+  <circle cx="40" cy="40" r="6" fill="#ff5f56"/>
+  <circle cx="60" cy="40" r="6" fill="#ffbd2e"/>
+  <circle cx="80" cy="40" r="6" fill="#27c93f"/>
+  <text class="dim" x="420" y="45" text-anchor="middle">opsx:tdd — solid RED</text>
+  <line x1="16" y1="60" x2="824" y2="60" stroke="#30363d"/>
+
+  <!-- body -->
+  <text x="40" y="92"><tspan class="grn b">❯</tspan> <tspan class="t">/opsx:tdd arms-930-player-schedule</tspan></text>
+
+  <text x="40" y="124" class="mag">Runner: npx vitest run · Render helper: @/test/render</text>
+  <text x="40" y="146" class="dim">Reading openspec/changes/arms-930-player-schedule/tests.md …</text>
+  <text x="40" y="168" class="dim">Writing real tests (real render · real data-testids · userEvent) …</text>
+
+  <text x="40" y="204" class="t">$ npx vitest run schedule-edit.test.tsx</text>
+  <text x="40" y="230"><tspan class="red b">❯</tspan> <tspan class="t">schedule-edit.test.tsx</tspan> <tspan class="dim">(17 tests)</tspan></text>
+  <text x="40" y="254" class="red">  ✗ FAIL — Failed to resolve import "./schedule-edit". Does the file exist?</text>
+  <text x="40" y="276" class="dim">    (solid RED: fails because the component isn't built yet — not a placeholder)</text>
+
+  <line x1="40" y1="298" x2="800" y2="298" stroke="#21262d"/>
+
+  <text x="40" y="328" class="grn b">## opsx:tdd complete — arms-930-player-schedule</text>
+  <text x="40" y="352" class="t">Tests written: <tspan class="b">17</tspan>   RED (expected): <tspan class="grn b">17</tspan>   Unexpected passes: <tspan class="grn b">0</tspan></text>
+  <text x="40" y="376" class="yel">New data-testid contract (apply must implement):</text>
+  <text x="40" y="398" class="cy">  • schedule-edit-trigger   • schedule-day-{mon..sun}</text>
+  <text x="40" y="420" class="cy">  • schedule-view-grid      • schedule-timeline-grid</text>
+
+  <text x="40" y="456" class="dim">→ Run <tspan class="t">/opsx:apply</tspan> to implement and turn them GREEN — <tspan class="t">no test rewrite</tspan>.</text>
+</svg>

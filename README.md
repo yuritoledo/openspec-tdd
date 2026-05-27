@@ -4,6 +4,10 @@
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 ![version](https://img.shields.io/badge/version-2.0.0-informational)
 
+<p align="center">
+  <img src="./assets/demo.svg" alt="opsx:tdd writing real failing tests and reporting a data-testid contract" width="720">
+</p>
+
 **Adds a TDD gate to [OpenSpec](https://github.com/Fission-AI/OpenSpec)** — a new `opsx:tdd`
 command that sits between `opsx:propose` and `opsx:apply`.
 
