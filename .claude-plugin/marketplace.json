@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "openspec-tdd",
+  "name": "yuritoledo",
   "description": "Adds a solid-RED opsx:tdd command to OpenSpec — a test-first gate that writes real failing tests instead of expect.fail placeholders.",
   "owner": {
     "name": "Yuri Toledo",
@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "yuritoledo",
+      "name": "openspec-tdd",
       "description": "Adds a test-first opsx:tdd gate between opsx:propose and opsx:apply that writes REAL failing tests (real render/testids/assertions).",
       "category": "testing",
       "source": "./plugins/openspec-tdd"
