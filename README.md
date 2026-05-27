@@ -45,7 +45,11 @@ rewrite**. It guards against regressions from the very first commit.
 ## Install
 
 ```sh
-# from a local clone
+# from GitHub
+/plugin marketplace add yuritoledo/openspec-tdd
+/plugin install openspec-tdd@openspec-tdd
+
+# or from a local clone
 /plugin marketplace add ~/code/openspec-tdd
 /plugin install openspec-tdd@openspec-tdd
 ```
