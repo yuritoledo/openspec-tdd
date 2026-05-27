@@ -1,5 +1,9 @@
 # openspec-tdd
 
+[![ci](https://github.com/yuritoledo/openspec-tdd/actions/workflows/ci.yml/badge.svg)](https://github.com/yuritoledo/openspec-tdd/actions/workflows/ci.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+![version](https://img.shields.io/badge/version-2.0.0-informational)
+
 **Adds a TDD gate to [OpenSpec](https://github.com/Fission-AI/OpenSpec)** — a new `opsx:tdd`
 command that sits between `opsx:propose` and `opsx:apply`.
 
@@ -61,10 +65,34 @@ project's `.claude/` and survives `openspec` CLI runs.
 
 ## Workflow
 
-```
+```text
 opsx:propose  →  opsx:tdd (this — solid red)  →  opsx:apply (green)  →  opsx:verify
 ```
 
+## Configuration
+
+Zero config by default — the skill detects your test runner and conventions from
+`CLAUDE.md`/`AGENTS.md` and `package.json` (vitest, jest, bun test, or node:test). To pin them,
+drop a `.openspec-tdd.json` at your repo root (see [`examples/.openspec-tdd.json`](./examples/.openspec-tdd.json)):
+
+```jsonc
+{
+  "testRunner": "npx vitest run",
+  "renderHelper": "@/test/render",
+  "canonicalTest": "src/components/example.test.tsx",
+  "testIdQuery": "getByTestId"
+}
+```
+
+## Docs
+
+- [`examples/before-after.md`](./examples/before-after.md) — false red vs solid red, side by side
+- Per-runner / non-React / e2e guidance lives in the skill's `references/`
+
+## Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Core rule: keep it solid-RED, never hardcode a stack.
+
 ## License
 
-MIT
+[MIT](./LICENSE)

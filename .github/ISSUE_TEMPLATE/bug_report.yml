@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in the opsx:tdd gate misbehaves
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did opsx:tdd do, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: runner
+    attributes:
+      label: Test runner
+      placeholder: vitest / jest / bun test / node:test
+  - type: textarea
+    id: detect
+    attributes:
+      label: Detected conventions
+      description: The "Runner / Render helper / Canonical ref" line the skill announced, and any `.openspec-tdd.json` you use.
+  - type: textarea
+    id: scenario
+    attributes:
+      label: tests.md scenario
+      description: The relevant Automated scenario group (File / Describe / Scenarios).
+      render: markdown
+  - type: textarea
+    id: output
+    attributes:
+      label: Generated test + failure
+      description: The test it wrote and the runner output.
+      render: shell

@@ -1,0 +1,8 @@
+{
+  "$comment": "Drop this at your repo root to skip auto-detection. All fields optional.",
+  "testRunner": "npx vitest run",
+  "renderHelper": "@/test/render",
+  "canonicalTest": "src/components/example.test.tsx",
+  "testIdQuery": "getByTestId",
+  "testFileGlob": "**/*.test.{ts,tsx}"
+}

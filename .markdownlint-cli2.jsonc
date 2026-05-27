@@ -1,0 +1,15 @@
+{
+  // Docs are prose + tables + code; relax the noisy stylistic rules.
+  "config": {
+    "MD013": false, // line length
+    "MD033": false, // inline HTML
+    "MD041": false, // first line heading
+    "MD036": false, // emphasis-as-heading (**Steps**, **Guardrails**)
+    "MD060": false, // table pipe spacing style
+    "MD031": false, // blanks around fences
+    "MD032": false, // blanks around lists
+    "MD024": { "siblings_only": true } // duplicate headings ok across sections
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules"]
+}
