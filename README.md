@@ -49,11 +49,11 @@ A new `opsx:tdd` skill that:
 ```sh
 # from GitHub
 /plugin marketplace add yuritoledo/openspec-tdd
-/plugin install openspec-tdd@openspec-tdd
+/plugin install yuritoledo@openspec-tdd
 
 # or from a local clone
 /plugin marketplace add ~/code/openspec-tdd
-/plugin install openspec-tdd@openspec-tdd
+/plugin install yuritoledo@openspec-tdd
 ```
 
 The skill is named `opsx:tdd`. It ships as a plugin skill, so it lives independently of your

@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "openspec-tdd",
+      "name": "yuritoledo",
       "description": "Adds a test-first opsx:tdd gate between opsx:propose and opsx:apply that writes REAL failing tests (real render/testids/assertions).",
       "category": "testing",
       "source": "./plugins/openspec-tdd"
