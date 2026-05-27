@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "openspec-tdd",
+  "version": "2.0.0",
+  "description": "Solid-RED opsx:tdd — converts a change's tests.md into REAL failing tests (real render, real data-testids, real assertions) that fail only because the implementation is missing. No expect.fail placeholders.",
+  "author": {
+    "name": "Yuri Toledo",
+    "email": "yuri.toledo@aceguardian.co"
+  },
+  "license": "MIT",
+  "keywords": [
+    "openspec",
+    "opsx",
+    "tdd",
+    "testing",
+    "red-green-refactor",
+    "vitest"
+  ],
+  "skills": "./skills/"
+}

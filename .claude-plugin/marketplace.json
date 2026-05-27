@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "openspec-tdd",
+  "description": "OpenSpec TDD overlay — a solid-RED opsx:tdd command that writes real failing tests instead of expect.fail placeholders.",
+  "owner": {
+    "name": "Yuri Toledo",
+    "email": "yuri.toledo@aceguardian.co"
+  },
+  "plugins": [
+    {
+      "name": "openspec-tdd",
+      "description": "Replaces opsx:tdd red-phase with REAL failing tests (real render/testids/assertions). Survives openspec CLI skill regeneration.",
+      "category": "testing",
+      "source": "./plugins/openspec-tdd"
+    }
+  ]
+}
